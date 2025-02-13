@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Quote</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffefef;
+            color: #b22222;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .bobbing-text {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #b22222;
+            background: white;
+            border-radius: 5px;
+            animation: bob 0.8s infinite ease-in-out;
+        }
+        @keyframes bob {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>"If I were to kiss you and then go to hell, I would. So then I might boast with the devils I had been to heaven—without ever entering it."<br>– William Shakespeare</h1>
+    </div>
+    <div class="bobbing-text">Then can I kiss you?</div>
+</body>
+</html>
